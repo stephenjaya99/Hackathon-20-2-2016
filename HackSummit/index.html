@@ -17,6 +17,12 @@
     <!-- Custom CSS -->
     <link href="css/2-col-portfolio.css" rel="stylesheet">
 
+    <script src="js/Script.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://w2ui.com/src/w2ui-1.4.2.min.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://w2ui.com/src/w2ui-1.4.2.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -76,7 +82,7 @@
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-6 portfolio-item" id="A1">
-                <a href="#">
+                <a href="#" onclick="popup()">
                     <img class="img-responsive" src="kumpulan foto\abraham-lincoln.jpg" alt="">
                 </a>
             </div>
@@ -214,6 +220,14 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+<script type="text/javascript">
+function popup() {
+    w2popup.open({
+        title: 'Popup Title',
+        body: '<div class="w2ui-centered">This is text inside the popup</div>'
+    });
+}
+</script>
 </body>
 
 </html>
